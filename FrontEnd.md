@@ -16,7 +16,7 @@
   "use strict;"
 ```
 * Strict Mode eliminates some js silence errors by change them to throwing errors
- * Make it impossible to create globle varible by mistake.
+ * Make it impossible to create global varible by mistake.
  * Make assignments that will fail silencely throw an error. e.g.
   ```javascript
     NaN = 12;
