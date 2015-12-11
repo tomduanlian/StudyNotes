@@ -10,7 +10,7 @@
 * Quirks Mode: For maintaining the backward compatibility with the web page designed for IE 5 or earlier.
 
 ##JS Knowledge
-##Strict Mode:
+####Strict Mode:
 * Triggered by following line at the top of the js code or on the top of a function:
 ```javascript
   "use strict;"
