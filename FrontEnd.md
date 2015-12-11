@@ -9,6 +9,22 @@
 * Standard Mode: For the web page strictly complies with W3C and IETF standards.
 * Quirks Mode: For maintaining the backward compatibility with the web page designed for IE 5 or earlier.
 
+####HTML vs XHTML:
+* XHTML stands for EXtensible HyperText Markup Language
+* XHTML is almost the same but more strict than HTML
+* XHTML is HTML that defined as an XML application.
+* Important
+  * XHTML DOCTYPE is mandatory
+  * The xmlns attribute in <html> is mandatory
+  * <html>, <head>, <title>, and <body> are mandatory
+  * XHTML elements must be properly nested
+  * XHTML elements must always be closed
+  * XHTML elements must be in lowercase
+  * XHTML documents must have one root element
+  * Attribute names must be in lower case
+  * Attribute values must be quoted
+  * Attribute minimization is forbidden 
+
 ##JS Knowledge
 ####Strict Mode:
 * Triggered by following line at the top of the js code or on the top of a function:
@@ -41,4 +57,5 @@
 * https://en.wikipedia.org/wiki/Document_type_declaration
 * http://www.w3.org/QA/Tips/Doctype
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+* http://www.w3schools.com/html/html_xhtml.asp
 
