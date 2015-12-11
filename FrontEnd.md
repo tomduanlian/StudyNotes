@@ -1,6 +1,6 @@
 #Front End
 
-##HTML Knowledge
+##HTML
 ####DOCTYPE: 
 * Document type declaration, is an instruction that associates a particular SGML or XML document (webpage) with a document type definition (DTD) (e.g. HTML).
 * Why is it important? It defines the version of (X)HTML used. It will trigger the "standard" mode for browsers. 
@@ -25,7 +25,13 @@
   * Attribute values must be quoted
   * Attribute minimization is forbidden 
 
-##JS Knowledge
+##CSS
+####inline and inline-block
+* Elements with display:inline-block elements are like display:inline elements, but they can have a width and height. So you can use an inline-block element as a block while flowing it within text.
+
+
+
+##JS
 ####Strict Mode:
 * Triggered by following line at the top of the js code or on the top of a function:
 ```javascript
@@ -58,4 +64,5 @@
 * http://www.w3.org/QA/Tips/Doctype
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 * http://www.w3schools.com/html/html_xhtml.asp
+* http://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block
 
