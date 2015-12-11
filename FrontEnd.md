@@ -1,6 +1,6 @@
-Front End
+#Front End
 
-HTML Knowledge
+##HTML Knowledge
 1. DOCTYPE: Document type declaration, is an instruction that associates a particular SGML or XML document (webpage) with a document type definition (DTD) (e.g. HTML).
 
 References:
