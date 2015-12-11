@@ -33,7 +33,7 @@
     var abc = 014; // syntax error in strict mode.
   ```
  * Forbids 'with' method
- * "eval" method can't intorduce new variable.
+ * "eval" method can't introduce new variable.
  * Forbids delete plain name.
 * Support: IE > 9
  
