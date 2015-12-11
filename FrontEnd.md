@@ -56,7 +56,15 @@
   ```
  * Forbids 'with' method
  * "eval" method can't introduce new variable.
+ ```javascript
+    eval('var x; x = 123;');
+    console.log(x); // undecleared in strict mode.
+ ```
  * Forbids delete plain name.
+ ```javascript
+    var abc;
+    delete abc; // not allowed in strict mode.
+ ```
 * Support: IE > 9
  
 #References:
