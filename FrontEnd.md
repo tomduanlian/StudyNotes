@@ -14,9 +14,9 @@
 * XHTML is almost the same but more strict than HTML
 * XHTML is HTML that defined as an XML application.
 * Important
-  * XHTML DOCTYPE is mandatory
-  * The xmlns attribute in <html> is mandatory
-  * <html>, <head>, <title>, and <body> are mandatory
+  * "XHTML DOCTYPE" is mandatory
+  * The xmlns attribute in \<html\> is mandatory
+  * \<html\>, \<head\>, \<title\>, and \<body\> are mandatory
   * XHTML elements must be properly nested
   * XHTML elements must always be closed
   * XHTML elements must be in lowercase
