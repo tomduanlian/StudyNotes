@@ -18,20 +18,20 @@
 * Strict Mode eliminates some js silence errors by change them to throwing errors
  * Make it impossible to create globle varible by mistake.
  * Make assignments that will fail silencely throw an error. e.g.
-```javascript
-  NaN = 12;
-```
+  ```javascript
+    NaN = 12;
+  ```
  * Throw error when trying to delete undeletable properties. E.g. Object.prototype
  * Throw error when have duplicate property names in an object when defined.
-```javascript
-  var obj = { p : 1, p : 2};
-  //in standard mode , obj will be {p : 2} by default. By in strict mode, it will throw a error.
-```
+  ```javascript
+    var obj = { p : 1, p : 2};
+    //in standard mode , obj will be {p : 2} by default. By in strict mode, it will throw a error.
+  ```
  * Throw error when there is duplicate parameter name in a function.
  * Forbids Octal Numbers
-```javascript
-  var abc = 014; // syntax error in strict mode.
-```
+  ```javascript
+    var abc = 014; // syntax error in strict mode.
+  ```
  * Forbids 'with' method
  * "eval" method can't intorduce new variable.
  * Forbids delete plain name.
