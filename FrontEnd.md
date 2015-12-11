@@ -35,7 +35,7 @@
  * Forbids 'with' method
  * "eval" method can't intorduce new variable.
  * Forbids delete plain name.
-* Support: IE > 9 others 
+* Support: IE > 9
  
 #References:
 * https://en.wikipedia.org/wiki/Document_type_declaration
