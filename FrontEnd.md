@@ -34,6 +34,18 @@
 * A class could be used by multiple elements and an element can have multiple classes.
 * An element could only have one ID and ID should be unique among all elements.
 
+####z-index
+* Represents the position of the element along the z-axis
+* The layer with larger z-index is above the others.
+* Only has an effect if an element is positioned.
+
+####Stacking context
+* Positioning and assigning a z-index value to an HTML element creates a stacking context, (as does assigning non-full opacity).
+* Stacking contexts can be contained in other stacking contexts, and together create a hierarchy of stacking contexts.
+* Each stacking context is completely independent from its siblings: only descendant elements are considered when stacking is processed.
+* Each stacking context is self-contained: after the element's contents are stacked, the whole element is considered in the stacking order of the parent stacking context.
+* Example: 
+ ![alt tag](https://developer.mozilla.org/@api/deki/files/913/=Understanding_zindex_04.png)
 ##JS
 ####Strict Mode:
 * Triggered by following line at the top of the js code or on the top of a function:
@@ -76,4 +88,6 @@
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 * http://www.w3schools.com/html/html_xhtml.asp
 * http://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block
+* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index
+* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
 
