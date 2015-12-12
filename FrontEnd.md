@@ -29,7 +29,10 @@
 ####inline and inline-block
 * Elements with display:inline-block elements are like display:inline elements, but they can have a width and height. So you can use an inline-block element as a block while flowing it within text.
 
-
+####Difference between classes and ID
+* CSS uses the prefix # for IDs and . for Classes.
+* A class could be used by multiple elements and an element can have multiple classes.
+* An element could only have one ID and ID should be unique among all elements.
 
 ##JS
 ####Strict Mode:
