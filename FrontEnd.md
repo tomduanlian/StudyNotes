@@ -83,7 +83,7 @@
  ```
 * Support: IE > 9
 
-####Closure
+####Closure:
 * Closure is newly created function that also contains its variable context, the variable that the function is relay on.
 * E.g.
 ```javascript
@@ -108,4 +108,5 @@
 * http://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block
 * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index
 * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+* http://www.kirupa.com/html5/closures_in_javascript.htm
 
