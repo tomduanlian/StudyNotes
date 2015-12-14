@@ -82,7 +82,24 @@
     delete abc; // not allowed in strict mode.
  ```
 * Support: IE > 9
- 
+
+####Closure
+* Closure is newly created function that also contains its variable context, the variable that the function is relay on.
+* E.g.
+```javascript
+   var startTime = function(){
+    var start = Date.now();
+    var getStartTime = function(){
+     return start;
+    }
+    return getStartTime;
+   }
+   
+   var fun = startTime();
+   fun();
+   // we will still get start in the fun even it is decleared when startTime function is called. 
+```
+
 #References:
 * https://en.wikipedia.org/wiki/Document_type_declaration
 * http://www.w3.org/QA/Tips/Doctype
