@@ -47,6 +47,9 @@
 * Example: <br />
   ![alt tag](https://developer.mozilla.org/@api/deki/files/913/=Understanding_zindex_04.png)
 
+####ID
+* In HTML4, an id can't be start with a number. In HTML5, this is changed. However, for CSS and d3, the id is still no allow to start with number.
+
 ##JS
 ####Strict Mode:
 * Triggered by following line at the top of the js code or on the top of a function:
