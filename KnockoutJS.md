@@ -2,15 +2,15 @@
 
 * Knockout is usually used to build a Model-View-ViewModel (MVVM) pattern web UI.
 
-* **_data-bind_** attributes are how Knockout lets you declaratively associate viewmodel properties with DOM elements. You can use multiple types of binding to bind data to dom elements. E.g. text, value, click, foreach etc.
+* **_data-bind_** attributes are how Knockout lets you declaratively associate viewmodel properties with DOM elements. You can use multiple types of binding to bind data to dom elements. E.g. text, value, click, foreach, even for visible.
   ```html
      <!-- format -->
-     <tbody data-bind="foreach: seats">
+     <tbody data-bind="foreach: opts">
   ```
   * Node 1: you can do multiple data-bind for one dom element:
   ```html
     <!-- $root refers to the AppViewModel -->
-    <select data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select>
+    <select data-bind="options: $root.availableOpts, value: optValue, optionsText: 'optName'"></select>
   ```
 * **_observables_**, a knockout concept - properties that automatically will issue notifications whenever their value changes. __ko.observable__ is used to make the properties of viewmodel observable.
   * Note 1: After make a property observable and binding it to a input, the dom tree won't update after you finish the input, i.e. tab out from the input.
