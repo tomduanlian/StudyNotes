@@ -3,7 +3,7 @@
 * Knockout is usually used to build a Model-View-ViewModel (MVVM) pattern web UI.
 
 * **_data-bind_** attributes are how Knockout lets you declaratively associate viewmodel properties with DOM elements. You can use multiple types of binding to bind data to dom elements. E.g. text, value, click, foreach etc.
-  ```javascript
+  ```html
      <!-- format -->
      <tbody data-bind="foreach: seats">
   ```
