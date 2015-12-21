@@ -19,6 +19,7 @@
       }
      }
   ```
+  * Note 3: __ko.observableArray__ is used as the observable equivalent of a regular array, which means it can automatically trigger UI updates whenever items are added or removed.
 * **_computed properties_**, a knockout concept - these are observable (i.e., they notify on change) and they are computed based on the values of other observables. Usually used to create combine proerrties base on observables. __ko.computed__ is used for computed, we will need to pass a call back function for generating the computed properties. 
 
 
