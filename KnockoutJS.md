@@ -7,6 +7,10 @@
      <!-- format -->
      <tbody data-bind="foreach: opts">
   ```
+  * Bindings notice __viewmodel changes__ and correspondingly update the __view's DOM__
+  * Bindings catch __DOM events__ and correspondingly update __viewmodel properties__
+  * **_with_** binding creates a binding context that will be used when binding any elements inside it.
+  * You can make custom bindings
   * Node 1: you can do multiple data-bind for one dom element:
   ```html
     <!-- $root refers to the AppViewModel -->
