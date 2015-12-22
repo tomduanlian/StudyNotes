@@ -10,10 +10,10 @@
   * Bindings notice __viewmodel changes__ and correspondingly update the __view's DOM__
   * Bindings catch __DOM events__ and correspondingly update __viewmodel properties__
   * **_with_** binding creates a binding context that will be used when binding any elements inside it.
-  * You can make custom bindings
+
   * Node 1: you can do multiple data-bind for one dom element:
   ```html
-    <!-- $root refers to the AppViewModel -->
+    <!-- $root refers to the ViewModel -->
     <select data-bind="options: $root.availableOpts, value: optValue, optionsText: 'optName'"></select>
   ```
   * Node 2: you can even data-bind css.
@@ -22,11 +22,32 @@
                css: { selected: $data == $root.chosenId() },
                click: $root.goToId"></li>
   ```
+  * You can make custom bindings
+    * use **_ko.bindingHandlers_**
+    * define this **_before_** ViewModel 
+  ```javascript
+      ko.bindingHandlers.customBinding = {
+        /*
+        * function called when seting the init status of the element
+        * params element: the dom element for this data bind. $(element) for using jQuery function to massage the dom element
+        * params valueAccessor: data-bind="customBinding: valueAccessor". valueAccessor() to get the value.
+        */
+        init: function(element, valueAccessor) {
+          ...
+        },
+        /*
+        * function called when the status of element updated.
+        */
+        update: function(element, valueAccessor) {
+          ...
+        } 
+      };
+  ```
 * **_observables_**, a knockout concept - properties that automatically will issue notifications whenever their value changes. __ko.observable__ is used to make the properties of viewmodel observable.
   * Note 1: After make a property observable and binding it to a input, the dom tree won't update after you finish the input, i.e. tab out from the input.
-  * Note 2: After make a property observable, the property become a function of the AppViewModel.
+  * Note 2: After make a property observable, the property become a function of the ViewModel.
   ```javascript
-     function AppViewModel() {
+     function ViewModel() {
       this.name = ko.observable("ko");
       var curName = this.name(); // name() works as getter, return 'ko'
       this.setName = function(){
