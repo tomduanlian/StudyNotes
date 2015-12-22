@@ -43,6 +43,7 @@
         } 
       };
   ```
+  * **_IMPORTANT_** - Do __NOT__ call **_ko.applyBindings_** after loading the data. It will rebuild the ViewModel everytime you load the data from backend, which is very inefficient.
 * **_observables_**, a knockout concept - properties that automatically will issue notifications whenever their value changes. __ko.observable__ is used to make the properties of viewmodel observable.
   * Note 1: After make a property observable and binding it to a input, the dom tree won't update after you finish the input, i.e. tab out from the input.
   * Note 2: After make a property observable, the property become a function of the ViewModel.
