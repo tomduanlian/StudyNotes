@@ -54,7 +54,7 @@
 ####Strict Mode:
 * Triggered by following line at the top of the js code or on the top of a function:
 ```javascript
-  "use strict;"
+  "use strict";
 ```
 * Strict Mode eliminates some js silence errors by change them to throwing errors
  * Make it impossible to create global varible by mistake.
