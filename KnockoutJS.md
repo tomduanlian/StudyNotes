@@ -14,6 +14,7 @@
   * Node 1: you can do multiple data-bind for one dom element:
   ```html
     <!-- $root refers to the ViewModel -->
+    <!-- we can use $parent to refer to parent DOM element -->
     <select data-bind="options: $root.availableOpts, value: optValue, optionsText: 'optName'"></select>
   ```
   * Node 2: you can even data-bind css.
