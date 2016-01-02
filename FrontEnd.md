@@ -103,6 +103,11 @@
    // we will still get start in the fun even it is decleared when startTime function is called. 
 ```
 
+####Name of the function
+* You can get the name of functin by calling fn.name
+* fn.name will be undefined if the function is anonymous function
+* fn.name may return undefined in low version IE.
+
 #References:
 * https://en.wikipedia.org/wiki/Document_type_declaration
 * http://www.w3.org/QA/Tips/Doctype
@@ -112,4 +117,5 @@
 * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index
 * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
 * http://www.kirupa.com/html5/closures_in_javascript.htm
+* http://www.imooc.com/article/3150
 
