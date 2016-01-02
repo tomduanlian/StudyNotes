@@ -107,6 +107,20 @@
 * You can get the name of functin by calling fn.name
 * fn.name will be undefined if the function is anonymous function
 * fn.name may return undefined in low version IE.
+  ```javascript
+  //Examples:
+  function abc() { // name of the function is abc
+   //logic
+  }
+  
+  var abc = function(){ // this is an anonymous function! abc is the reference to the function, not the name
+   // logic
+  }
+  
+  var abc = function foo(){ // foo could not refered as the name of the function outside the scope of the function.
+   // logic
+  }
+  ```
 
 #References:
 * https://en.wikipedia.org/wiki/Document_type_declaration
